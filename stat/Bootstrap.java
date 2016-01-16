@@ -14,7 +14,8 @@ public class Bootstrap {
 				count++;
 
 				//Every 6 hours
-				if(count % 360 == 0) {
+				if(count >= 360) {
+					count = 0;
 					System.out.println("contact_list");
 				}
 			}
